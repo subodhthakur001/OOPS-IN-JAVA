@@ -1,0 +1,68 @@
+Class and OBjects->
+In OOP languages class is an logical entity it is known as the named group of properties and functions
+it is basically a blueprint of an user defined datatype
+classes does not accquire space int the memory only object does.
+class is an template of an object
+objects are the instances of the class
+main difference between objects and classes is object is a physical entity and class is a logical entity
+
+Dot method (.)->
+a dot method is used to access the instance variables of a class.
+instance variables are those which are present in classes and they belongs to objects
+
+
+question 1- what happens when we declared class references without new keyword?
+ ans - the reference variables of that class we get memory in stack but it refer to null because no object address assign to it. 
+ for primitive data types ->
+    the default values will be instialiazed i.e. for boolean -false, float - 0.0,for int -0 
+
+
+ question 2- what does new keyword does in java?
+ ans= it is used to dynamically allocate the memory to the oject of the class in heap and return address of it to the reference variable.
+
+ question 3 - What is a constructor ?
+ ans -> a constructor is a special function that runs when you create an object and it allocates some variables.
+        if no constructor is there in the class then default constructor gets called.
+
+ question 4 -> What is a significance of using this keyword ?
+anns-> this keyword is used to access the current invoking object. it replaces the object name which has been recently created.
+
+question 5 -> can you call a constructor from anothere constructor?
+ans -> yes it is possible to call a constructor from another constructor  HOW? -> shown in code
+
+question 6 -> Is there a difference between objects and primitive data types?
+ans-> yes! the main difference between them is their place of memory allocation primitive data types are stored in stack memory but the
+objects are store in heap memory 
+
+question 7-> since new keyword is used for allocating the memory why don't we use new keyword for primitive data types such as int float etc?
+ans-> we have already discussed that primitive data types are stored in stack memory so new keyword is used only for creating an object 
+and object are stored in heap memory hence we dont use new for declaring primitive data types. it increases memory managament efficiency
+
+question 8-> Does java is call by value or call by reference ?
+ans -> java is call by value why? because in java pointer do not exists. in java whole value of the variable is passed
+
+question 9-> what is the difference between call by value and call by reference ?
+ans -> In call by reference the address of the stack variable is passed to the local variable of the function whereas in call by value
+the value of the stack variable is passed to the local variable of the function. Now if the local variable of the function which get the 
+copy of the value of that argument make any changes it will not reflect any changes to the original value of the actual parameter.
+
+question 10-> final keyword ->
+final keyword is used to make anything final be it class , methods or variables. if you make a class as final then you cannot make its child class
+if you make a method final you cannot override it but you can overload a final method. if you make a variable as final you cannot change its value.
+
+question 11-> Wrapper class ->
+wrapper class is a class who wraps or contains primitive data types 
+Wrapper class in java provides the mechanism to convert primitive data type into object is called boxing and object into primitive data type is called unboxing.
+They convert primitive data types into objects.
+
+Autoboxing: Automatic conversion of primitive types to the object of their corresponding wrapper classes is known as autoboxing
+Unboxing: It is just the reverse process of autoboxing. Automatically converting an object of a wrapper class to its corresponding primitive type is known as unboxing. 
+
+ for more -> https://www.geeksforgeeks.org/wrapper-classes-java/
+
+
+question 12->
+garbage collection in java->
+  whenever a object looses its reference it becomes a garbage. unlike C++ we have something called garbage collection
+  it automatically free the memory which has been allocated for that object. garbage collection improves memory efficiency
+  we dont have to deal with pointers here as pointers are very complex to use garbage is collected automatically.
